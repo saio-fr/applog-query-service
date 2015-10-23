@@ -1,0 +1,26 @@
+{
+  "name": "@saio/applog-query-test",
+  "version": "0.0.1",
+  "description": "integration test for applog-query-service",
+  "main": "applogQueryService.test.integration.js",
+  "dependencies": {
+    "@saio/wsocket-component": "*",
+    "@saio/db-component": "*",
+    "@saio/service-runner": "*",
+    "when": "*",
+    "blue-tape": "*",
+    "tap-spec": "*"
+  },
+  "scripts": {
+    "test": "blue-tape applogQueryService.test.integration.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:saio-fr/applog-query-service.git"
+  },
+  "author": "Alexis Terrat",
+  "bugs": {
+    "url": "https://github.com/saio-fr/applog-query-service/issues"
+  },
+  "homepage": "https://github.com/saio-fr/applog-query-service"
+}

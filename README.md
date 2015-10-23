@@ -1,1 +1,2 @@
-# applog-query-service
+# applog-service
+Handles front-end event storage &amp; retrieval

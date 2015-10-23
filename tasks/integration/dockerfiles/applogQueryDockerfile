@@ -1,0 +1,10 @@
+FROM applog-query-base
+
+RUN mkdir -p /opt/service/config
+WORKDIR /opt/service
+ADD src ./src
+ADD package.json ./package.json
+ADD test/integration/config/applogQueryService.config.json ./config/config.json
+
+RUN npm install
+ENTRYPOINT ["npm", "start", "--"]
